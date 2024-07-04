@@ -1,0 +1,99 @@
+.navbar-panel{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(26, 223, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.navbar-panel a{
+    
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+}
+
+.navbar-panel a:hover{
+    color: #fff;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.superior a{
+    text-decoration: none;
+    background: blue;
+    padding: 6px;
+    margin: 30px 20px 30px 20px ;
+    color: aliceblue;
+}
+
+.opciones{
+   
+    display: flex;
+    justify-content: center;
+    
+    padding: 30px;
+    
+    border-radius: 5px;
+    
+}
+.opciones ul{
+    padding: 20px;
+    margin-top: 20px;
+    background: rgb(26, 223, 233);
+    box-shadow: 5px 5px 5px black;
+}
+.opciones ul li{
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.opciones ul li a{
+    text-decoration: none;
+    background: rgb(3, 69, 69);
+    padding: 8px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.opciones ul li .msj{
+    text-decoration: none;
+    background: rgb(246, 64, 200);
+    padding: 8px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.opciones ul li a:hover{
+    background: rgb(28, 27, 27);
+    color: aliceblue;
+}
+
+h1{
+    text-align: center;
+    color: rgb(24, 155, 211);
+}
+
+footer{
+    height: 60px;
+    background: #060415;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: #999999;
+}

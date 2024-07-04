@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="shortcut icon" href="../img/logo.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar-panel ">
+            <a href="../index.html">Ir a la tienda</a>
+            <a href="lista-productos.html">Ver inventario</a>
+            <a href="agregar-producto.html">Agregar producto</a>
+            <a href="ver-producto.html">Ver producto</a>
+            <a href="editar-eliminar-producto.html">Editar/Eliminar producto</a>
+            <a href="ver-mensajes.html">Mensajes</a>
+
+        </nav>
+    </header>
+    <div class="logo-centrado">
+        <img src="../img/logo.png" alt="logo" width="150">
+    </div>
+    <h1>Mensajes por formulario de contacto</h1><br>
+        <table>
+            <thead>
+
+
+                <tr>
+                    <th>Nro</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Teléfomno</th>
+                    <th>Asunto</th>
+                    <th>Mensaje</th>
+
+                </tr>
+            </thead>
+            <tbody id="tablaProductos"> </tbody>
+        </table><br>
+
+
+        <script>
+            const URL = "http://127.0.0.1:5000/"
+
+            fetch(URL + 'mensajes')
+            .then(function (response) {
+                if (response.ok) {
+                
+                    return response.json();
+                } else {
+                
+
+                    throw new Error('Error al obtener los productos.');
+                }
+            })
+
+        
+           
+            .then(function (data) {
+            let tablaProductos = document.getElementById('tablaProductos'); 
+
+            console.log(data)
+
+            for (let mensaje of data) {
+                let fila = document.createElement('tr'); 
+
+                fila.innerHTML = '<td>' + mensaje.id + '</td>' + '<td>' + mensaje.nombre + '</td>' + '<td>' + mensaje.email + '</td>' + '<td>' + mensaje.telefono +'</td>' + '<td>' + mensaje.asunto+ '</td>' + '<td>' + mensaje.comentario + '</td>';
+            
+                tablaProductos.appendChild(fila);
+
+                
+            
+                
+            }
+
+            
+            })
+            .catch(function (error) {
+            alert('Error al obtener los mensajes.');
+            });
+            
+
+        </script>
+        <footer><p>Trabajo Práctico integrador - Codo a Codo 2024</p></footer>
+</body>
+</html>
