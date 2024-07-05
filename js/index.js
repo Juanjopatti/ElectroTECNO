@@ -392,7 +392,7 @@ fetch(URL + 'productos')
                                 <th><div class="card" id="card">
                     
                                     <figure>
-                                        <img src=http://127.0.0.1:5000/static/imagenes/${producto.imagen_url}  alt="Imagen del producto" style="wihtd: 200px">
+                                         <img src=https://www.pythonanywhere.com/user/JuanjoPatti/files/home/JuanjoPatti/mysite/static/imagenes/${producto.imagen_url} alt="Imagen del producto" style="width: 200px;">
                                     </figure>
                                     <div class="contCard">
                                         <h5> ${producto.descripcion}</h5>
@@ -419,7 +419,7 @@ fetch(URL + 'productos')
                                 <th><div class="card" id="card">
                     
                                     <figure>
-                                        <img src=http://127.0.0.1:5000/static/imagenes/${producto.imagen_url}  alt="Imagen del producto" style="wihtd: 200px">
+                                        <img src=https://www.pythonanywhere.com/user/JuanjoPatti/files/home/JuanjoPatti/mysite/static/imagenes/${producto.imagen_url} alt="Imagen del producto" style="width: 200px;">
                                     </figure>
                                     <div class="contCard">
                                         <h5> ${producto.descripcion}</h5>
