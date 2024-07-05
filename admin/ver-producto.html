@@ -27,7 +27,7 @@
     <footer><p>Trabajo Práctico integrador - Codo a Codo 2024</p></footer>
     <script>
 
-        const URL = "http://127.0.0.1:5000/"
+        const URL = "https://JuanjoPatti.pythonanywhere.com/"
 
         document.getElementById("form-obtener-producto").addEventListener('submit', function(event){
                 event.preventDefault();
@@ -49,7 +49,7 @@
                     console.log(data)
                     lista=
                         '<ul>' +
-                            '<li><img src=http://127.0.0.1:5000/static/imagenes/' + data.imagen_url + ' alt="Imagen del producto"></li>'+
+                            '<li><img src=https://www.pythonanywhere.com/user/JuanjoPatti/files/home/JuanjoPatti/mysite/static/imagenes/' + data.imagen_url + ' alt="Imagen del producto"></li>'+
                             '<li>Nombre d ela imagen: ' + data.imagen_url + '</li>' +
                             '<li>Descripcion: ' + data.descripcion + '</li>' +
                             '<li>Precio: ' + data.precio + '</li>' +

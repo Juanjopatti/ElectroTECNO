@@ -37,12 +37,12 @@
 
                 </tr>
             </thead>
-            <tbody id="tablaProductos"> </tbody>
+            <tbody id="tablaMensajes"> </tbody>
         </table><br>
 
 
         <script>
-            const URL = "http://127.0.0.1:5000/"
+            const URL = "https://JuanjoPatti.pythonanywhere.com/"
 
             fetch(URL + 'mensajes')
             .then(function (response) {
@@ -52,14 +52,14 @@
                 } else {
                 
 
-                    throw new Error('Error al obtener los productos.');
+                    throw new Error('Error al obtener los mensajes');
                 }
             })
 
         
            
             .then(function (data) {
-            let tablaProductos = document.getElementById('tablaProductos'); 
+            let tablaProductos = document.getElementById('tablaMensajes'); 
 
             console.log(data)
 

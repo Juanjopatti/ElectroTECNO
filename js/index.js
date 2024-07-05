@@ -339,7 +339,7 @@ if (document.getElementById('idTv')) {
     //Se carga las tarjetas creadas con el bucle en la etiqueta con id "idTv"
 
 
-const URL = "http://127.0.0.1:5000/"
+const URL = "https://JuanjoPatti.pythonanywhere.com/"
 
 fetch(URL + 'productos')
     .then(function(response){

@@ -47,7 +47,7 @@
 
         </div>
         <script>
-            const URL = "http://127.0.0.1:5000/"
+            const URL = "https://JuanjoPatti.pythonanywhere.com/"
             // Obtiene el contenido del inventario
             function obtenerProductos() {
                 fetch(URL + 'productos') // Realiza una solicitud GET al servidor y obtener la lista de productos.
@@ -70,7 +70,7 @@
                         <td>${producto.descripcion}</td>
                         <td>${producto.cantidad}</td>
                         <td align="right">${producto.precio}</td>
-                        <td><img src=http://127.0.0.1:5000/static/imagenes/${producto.imagen_url} alt="Imagen del producto" style="width: 100px;"></td>
+                        <td><img src=https://www.pythonanywhere.com/user/JuanjoPatti/files/home/JuanjoPatti/mysite/static/imagenes/${producto.imagen_url} alt="Imagen del producto" style="width: 100px;"></td>
                         <td align="right">${producto.categoria}</td>
                         <td><button onclick="eliminarProducto('${producto.codigo}')">Eliminar</button></td>
                         <td><a class="editar" href="editar-producto.html?cod=${producto.codigo}">Editar</a></td>
