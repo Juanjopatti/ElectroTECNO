@@ -180,11 +180,11 @@ var cadFooter = `
     
 </div>
 <div class="redes">
-    <span><a href="redes.html" target="_blank"><i class="fa-brands fa-facebook"></i> </a></span>
-    <span><a href="redes.html" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
-    <span><a href="redes.html" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></span>
-    <span><a href="redes.html" target="_blank"><i class="fa-brands fa-youtube"></i></a></span>
-    <span><a href="redes.html" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span>
+    <span><a href="#"><i class="fa-brands fa-facebook"></i> </a></span>
+    <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+    <span><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span>
+    <span><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
+    <span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
 
 </div>
 <div class="texto">
@@ -198,7 +198,7 @@ var cadFooter = `
 </div>
 <div class="copy">
     <p>Trabajo Práctico integrador - Codo a Codo 2024</p>
-    <p class="panel"><a href="./admin/panel.html" target="_blank">Acceso al Panel </a></p>
+    <p class="panel"><a href="./admin/panel.html">Acceso al Panel </a></p>
 
 </div>`
 
