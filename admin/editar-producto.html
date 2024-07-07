@@ -25,14 +25,19 @@
         </div>
         <h1>Modificar Productos del Inventario</h1><br>
 
-        <!-- Contenedor principal que será controlado por JavaScript. Este contenedor tendrá dos formularios. -->
+        
         <div id="app">
 
 
-            <!-- Segundo formulario: se muestra solo si mostrarDatosProducto es verdadero. Llama a la función guardarCambios -->
+           
             <div id="datos-producto">
                 <h2>Datos del Producto</h2>
-                <div id="datos-actuales"></div>
+                
+                <div id="datos-actuales">
+                    <!-- Acá se cargan los datos actuales del producto, se obtienen con el codigo de producto que fue 
+                    pasado como parametro en la url desde la pagina anterior-->
+                </div>
+                
                 <form id="form-guardar-cambios">
                     <label for="descripcion">Descripción:</label>
                     <input type="text" id="descripcionModificar" name="descripcion" required><br>
@@ -66,20 +71,17 @@
             
 
             const URL = "https://JuanjoPatti.pythonanywhere.com/"
-            // Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-            //const URL = "https://USUARIO.pythonanywhere.com/"
-            // Variables de estado para controlar la visibilidad y los datos del formulario
+            
            
-            //?cod=x es la cadena que contiene el parametro
+            //?cod=x es la cadena que contiene el parametro en la url
             const paramUrl = window.location.search
             
             //cortamos la cadena que contiene el parametro de la url y la convertimos en un array donde el indice "1" es el valor que necesitamos
             codProd = paramUrl.split("=")
 
-            
+            //Acá guardamos el parametro en una variable y de esta forma ya podemos usarlo para hacer las consultas a la base de datos
             var codigo = parseInt(codProd[1])
-
-            console.log(codigo)
+           
             
            
             fetch(URL + 'productos/' + codigo)
