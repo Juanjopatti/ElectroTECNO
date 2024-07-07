@@ -35,7 +35,7 @@
                     <label for="nombre" class="formulario_label "><b>Nombre:</b> <span class="campo_obligatorio">*</span></label>
                     <div class="formulario_grupo-input">
                         <!--input Nombre-->
-                        <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Nombre">
+                        <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Nombre" required>
                     </div>
                     <p class="formulario_input-error" id="error_nombre">El nombre solo puede contener letras y espacios</p>
                 </div>
@@ -43,7 +43,7 @@
                 <div class="formulario_grupo campo_correo" id="grupo_correo">
                     <label for="correo" class="formulario_label"><b>Correo Electronico:</b> <samp class="campo_obligatorio">*</samp></label>
                     <div class="formulario_grupo-input">
-                        <input type="email" class="formulario_input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <input type="email" class="formulario_input" name="correo" id="correo" placeholder="correo@correo.com" required>
                     </div>
                     <p class="formulario_input-error" id="error_correo">Ingrese un correo válido</p>
                 </div>
@@ -57,37 +57,29 @@
                     </div>
                 </div>
                 <div class="formulario_grupo grupo_asunto" id="grupo_asunto" >
-                    <label for="asunto" class="formulario_label"><b>Asunto:<span class="campo_obligatorio">*</span></b></label>
+                    <label for="asunto" class="formulario_label"><b>Asunto:</b></label>
                     <select name="asunto" id="asunto">
                         <option value="0">Seleccione</option>
                         <option value="1">Solicitar info</option>
                         <option value="2">Quiero que me contacten</option>
                         <option value="3">Necesito ayuda</option>
                     </select>
-                    <p class="formulario_input-error" id="error_asunto">Seleccione un asunto</p>
                 </div>
                 <!--Grupo: Mensaje-->
                 <div class="formulario_grupo campo_mensaje" id="grupo_mensaje">
                     <label for="mensaje" class="formulario_label"><b>Mensaje:</b></label>
                     <div class="formulario_grupo-input">
-                        <textarea class="formulario_grupo" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        <textarea class="formulario_grupo" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
                         <p>Los campos marcados con (<span class="campo_obligatorio">*</span>) son obligatorios</p>
                     </div>
                 </div>
                  <!--Grupo: Politicas de privacidad-->
-                 <div class="formulario_grupo campo_privacidad" id="grupo_privacidad">
-                    <label class="formulario_label">
-                        <input class="formulario_checkbox" type="checkbox" name="privacidad" id="privacidad">
-                        <a href="#">He leído y acepto las politicas de privacidad</a>
-                    </label>
-                </div>
+                 
                 <!--Bootón para enviar los datos-->
                 <div class="formulario_grupo formulario_grupo-btn-enviar campo_btn">
                     <button type="submit" class="formulario_btn">Enviar</button>
                 </div>
-                <div class="campo_mensajef" id="mensaje_exito"><i class="fa-solid fa-check-circle"></i> El formulario se envio exitosamente</div>
-                <div class="campo_mensajef" id="mensaje_error"><i class="fa-solid fa-triangle-exclamation"></i><b>Error:</b> Por favor rellene el formulario correctamente</div>
-            </form>
+               
         </main>
         <footer class="footer" id="idFooter">
             <!--Para el footer se uso el mismo método que en el header, se trae de "index.js" y se enlaza mediante el "id"
